@@ -15,6 +15,7 @@ function remove_jquery_migrate( &$scripts ) {
 add_action( 'wp_enqueue_scripts', 'enqueue_theme_scripts' );
 function enqueue_theme_scripts() {
 
+	wp_enqueue_script( 'ndl-scripts', get_stylesheet_directory_uri() . '/ndl-scripts.min.js', 'jquery', false, true );
 	wp_enqueue_style( 'ndl-style', get_stylesheet_directory_uri() . '/style.css' );
 
 }
