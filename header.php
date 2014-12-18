@@ -16,6 +16,7 @@
 				<div class="column6 end">
 					<span>
 						<h1><?php bloginfo('name'); ?></h1>
+						<a class="splash-arrow"></a>
 					</span>
 				</div>
 			</div>
