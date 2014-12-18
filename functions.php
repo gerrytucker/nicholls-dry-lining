@@ -1,22 +1,13 @@
 <?php
 
-// Remove jQuery Migrate
-add_action( 'wp_default_scripts', 'remove_jquery_migrate' );
-function remove_jquery_migrate( &$scripts ) {
-	
-	if ( ! is_admin() ) {
-		$scripts->remove( 'jquery' );
-		$scripts->add( 'jquery', false, array( 'jquery-core' ) );
-	}
-	
-}
-
 // Enqueue styles & scripts
 add_action( 'wp_enqueue_scripts', 'enqueue_theme_scripts' );
 function enqueue_theme_scripts() {
 
-	wp_enqueue_script( 'ndl-scripts', get_stylesheet_directory_uri() . '/app.min.js', 'jquery', false, true );
-	wp_enqueue_style( 'ndl-styles', get_stylesheet_directory_uri() . '/style.css' );
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", false, true);
+	wp_enqueue_script( 'ndl-app', get_stylesheet_directory_uri() . '/app.min.js', 'jquery', false, true );
+	wp_enqueue_style( 'ndl-style', get_stylesheet_directory_uri() . '/style.css' );
 
 }
 
