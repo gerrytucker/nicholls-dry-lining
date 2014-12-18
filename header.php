@@ -14,7 +14,9 @@
 		<div id="header" class="grid-full">
 			<div class="row">
 				<div class="column6 end">
-					<h1><?php bloginfo('name'); ?></h1>
+					<span>
+						<h1><?php bloginfo('name'); ?></h1>
+					</span>
 				</div>
 			</div>
 		</div>
