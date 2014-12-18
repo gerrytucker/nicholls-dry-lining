@@ -3,10 +3,10 @@
 		<div id="services" class="grid-full">
 			<div class="row">
 				<div class="services column6">
-					<h2>Plastering</h2>
+					<span>Plastering</span>
 				</div>
 				<div class="services column6">
-					<h2>Dry Lining</h2>
+					<span>Dry Lining</span>
 				</div>
 			</div>
 		</div>
