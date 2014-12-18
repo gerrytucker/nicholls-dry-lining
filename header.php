@@ -13,7 +13,7 @@
 
 		<div id="header" class="grid-full">
 			<div class="row">
-				<div class="column4 end">
+				<div class="column6 end">
 					<h1><?php bloginfo('name'); ?></h1>
 				</div>
 			</div>
