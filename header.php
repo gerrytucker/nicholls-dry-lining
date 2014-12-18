@@ -12,4 +12,5 @@
 	<body>
 
 		<div id="header" class="grid-full">
+			<div class="row"></div>
 		</div>
