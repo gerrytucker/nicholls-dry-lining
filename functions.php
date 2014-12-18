@@ -6,7 +6,8 @@ function enqueue_theme_scripts() {
 
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/jquery-2.1.3.min.js", false, true );
-	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'jquery', false, false, true );
+	wp_enqueue_script( 'ndl-fonts', get_stylesheet_directory_uri() . '/webfonts.min.js', false, false, true );
 	wp_enqueue_script( 'ndl-app', get_stylesheet_directory_uri() . '/app.min.js', 'jquery', false, true );
 	wp_enqueue_style( 'ndl-style', get_stylesheet_directory_uri() . '/style.css' );
 
