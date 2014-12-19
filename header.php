@@ -13,7 +13,9 @@
 
 		<div id="menu" class="grid-full">
 			<div class="row">
-				<div class="column12">
+				<div class="column6 end">
+					<a href="#services">Services</a>
+					<a href="#contact">Contact Us</a>
 				</div>
 			</div>
 		</div>
