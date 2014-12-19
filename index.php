@@ -13,10 +13,10 @@
 
 		<div id="contact" class="grid-full">
 			<div class="row">
-				<div class="contact column6">
+				<div class="contact column8">
 					<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact Us"]' ); ?>
 				</div>
-				<div class="contact column6">
+				<div class="contact column4">
 				</div>
 			</div>
 		</div>
