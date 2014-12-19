@@ -11,6 +11,13 @@
 	</head>
 	<body>
 
+		<div id="menu" class="grid-full">
+			<div class="row">
+				<div class="column12">
+				</div>
+			</div>
+		</div>
+
 		<div id="header" class="grid-full">
 			<div class="row">
 				<div class="column6 end">
