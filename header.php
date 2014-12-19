@@ -15,8 +15,8 @@
 			<div class="row">
 				<div class="column6 end">
 					<span>
-						<h1><?php bloginfo('name'); ?></h1>
-						<a href="#services" class="splash-arrow"></a>
+						<h1 class="fade-in"><?php bloginfo('name'); ?></h1>
+						<a href="#services" class="splash-arrow fade-in">&nbsp;</a>
 					</span>
 				</div>
 			</div>
