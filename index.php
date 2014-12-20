@@ -12,6 +12,7 @@
 
 	$pages = get_pages( $args );
 	foreach( $pages as $page ) :
+		var_dump( $page );
 		if ( has_post_thumbnail( $page->ID ) ) {
 			$thumb_url = wp_get_attachment_url( get_post_thumbnail_id( $page->ID ), 'large' );
 		}
