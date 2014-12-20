@@ -1,13 +1,29 @@
 <?php get_header(); ?>
 
+<?php
+	$args = array(
+		'sort_order' => 'ASC',
+		'sort_column' => 'ID',
+		'number' => 2
+	);
+
 		<div id="services" class="grid-full">
 			<div class="row">
-				<div class="services column6">
-					<span>Plastering</span>
+
+	$pages = get_pages( $args );
+	foreach( $pages as $page ) {
+		$title = get_the_title();
+		if ( has_post_thumbnail( $page->ID ) ) {
+			$thumb_url = wp_get_attachment_src( get_post_thumbnail_id( $page->ID ), 'large' );
+		}
+	}
+?>
+				<div class="services column6" style="background: url(<?php echo $thumburl[0]; ?>) no repeat center center">
+					<span><?php echo $title; ?></span>
 				</div>
-				<div class="services column6">
-					<span>Dry Lining</span>
-				</div>
+
+<?php endforeach; ?>				
+					
 			</div>
 		</div>
 
