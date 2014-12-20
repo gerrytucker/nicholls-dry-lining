@@ -14,8 +14,12 @@
 		<div id="menu" class="grid-full">
 			<div class="row">
 				<div class="column6 end">
-					<a href="#services">Services</a>
-					<a href="#contact">Contact Us</a>
+					<ul>
+						<li>
+							<a href="#services">Services</a>
+							<a href="#contact">Contact Us</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
