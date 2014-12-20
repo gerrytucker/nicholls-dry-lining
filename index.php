@@ -12,7 +12,17 @@
 
 	$pages = get_pages( $args );
 	foreach( $pages as $page ) :
-		$thumb_url = wp_get_attachment_url( get_post_thumbnail_id( $page->ID ), 'large' );
+		$thumb_url = '';
+
+		$args = array(
+			'post_type' => 'attachment',
+			'post_parent' => $page->ID
+		);
+		$attachments = get_posts( $args );
+		foreach( $attachments as $attachment ) {
+			$thumb_url = wp_get_attachment_url( get_post_thumbnail_id( attachment->ID ), 'large' );
+			break;
+		}
 ?>
 				
 				<div class="services column6" style="background: url(<?php echo $thumburl[0]; ?>) no repeat center center">
