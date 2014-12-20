@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
+		<div id="services" class="grid-full">
+			<div class="row">
+
 <?php
 	$args = array(
 		'sort_order' => 'ASC',
 		'sort_column' => 'ID',
 		'number' => 2
 	);
-
-		<div id="services" class="grid-full">
-			<div class="row">
 
 	$pages = get_pages( $args );
 	foreach( $pages as $page ) {
