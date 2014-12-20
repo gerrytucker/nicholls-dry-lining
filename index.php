@@ -21,6 +21,7 @@
 		$attachments = get_posts( $args );
 		foreach( $attachments as $attachment ) {
 			$thumb_url = wp_get_attachment_url( get_post_thumbnail_id( $attachment->ID ), 'large' );
+			var_dump($thumb_url);
 			break;
 		}
 ?>
