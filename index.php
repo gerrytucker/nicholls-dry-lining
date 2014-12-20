@@ -25,7 +25,7 @@
 		}
 ?>
 				
-				<div class="services column6" style="background: url(<?php echo $thumburl[0]; ?>) no repeat center center">
+				<div class="services column6" style="background: url(<?php echo $thumb_url[0]; ?>) no repeat center center">
 					<span><?php echo $page->post_title; ?></span>
 				</div>
 
