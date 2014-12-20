@@ -11,12 +11,11 @@
 	);
 
 	$pages = get_pages( $args );
-	foreach( $pages as $page ) {
+	foreach( $pages as $page ) :
 		$title = get_the_title();
 		if ( has_post_thumbnail( $page->ID ) ) {
 			$thumb_url = wp_get_attachment_src( get_post_thumbnail_id( $page->ID ), 'large' );
 		}
-	}
 ?>
 				<div class="services column6" style="background: url(<?php echo $thumburl[0]; ?>) no repeat center center">
 					<span><?php echo $title; ?></span>
