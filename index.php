@@ -12,10 +12,10 @@
 
 	$pages = get_pages( $args );
 	foreach( $pages as $page ) :
-		$thumb_url = wp_get_attachment_url( get_post_thumbnail_id( $page->ID ), 'large' );
+		$thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'large' );
 ?>
 				
-				<div class="services column6" style="background: url(<?php echo $thumb_url; ?>) no-repeat center center fixed;">
+				<div class="services column6" style="background: url(<?php echo $thumb_url[0]; ?>);">
 					<span><?php echo $page->post_title; ?></span>
 				</div>
 
