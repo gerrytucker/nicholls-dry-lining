@@ -15,11 +15,11 @@
 
 			<div class="menu-wrap">
 				<nav class="menu">
-					<div class="menu-list">
-						<a href="#services">Services</a>
-						<a href="#contact">Contact Us</a>
-						<a href="#services">Testimonials</a>
-					</div>
+					<ul class="menu-list">
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#services">Testimonials</a></li>
+					</ul>
 				</nav>
 			</div>
 			<button class="menu-button" id="open-button"></button>
