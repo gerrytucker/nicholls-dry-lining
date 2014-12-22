@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-		<div id="services" class="grid-full">
-			<div class="row">
+				<div id="services" class="grid-full">
+					<div class="row">
 
 <?php
 	$args = array(
@@ -15,23 +15,23 @@
 		$thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'large' );
 ?>
 				
-				<div class="services column6" style="background: url(<?php echo $thumb_url[0]; ?>);">
-					<span><?php echo $page->post_title; ?></span>
-				</div>
+						<div class="services column6" style="background: url(<?php echo $thumb_url[0]; ?>);">
+							<span><?php echo $page->post_title; ?></span>
+						</div>
 
 <?php endforeach; ?>				
 					
-			</div>
-		</div>
+					</div>
+				</div>
 
-		<div id="contact" class="grid-full">
-			<div class="row">
-				<div class="contact column8">
-					<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact Us"]' ); ?>
+				<div id="contact" class="grid-full">
+					<div class="row">
+						<div class="contact column8">
+							<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact Us"]' ); ?>
+						</div>
+						<div class="contact column4">
+						</div>
+					</div>
 				</div>
-				<div class="contact column4">
-				</div>
-			</div>
-		</div>
 
 <?php get_footer(); ?>

@@ -1,5 +1,10 @@
 <?php
 
+// Configure WP plugin auto updates
+add_filter( 'auto_update_plugin', '__return_true' );
+// Configure WP theme auto updates
+add_filter( 'auto_update_theme', '__return_true' );
+
 // Enqueue styles & scripts
 add_action( 'wp_enqueue_scripts', 'enqueue_theme_scripts' );
 function enqueue_theme_scripts() {
@@ -12,7 +17,7 @@ function enqueue_theme_scripts() {
 
 }
 
-// Add Open Graph tagsperpage
+// Add Open Graph tags per page
 add_action( 'wp_head', 'add_open_graph_tags' );
 function add_open_graph_tags() {
 	

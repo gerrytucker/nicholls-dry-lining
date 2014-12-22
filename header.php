@@ -11,26 +11,28 @@
 	</head>
 	<body>
 
-		<div id="menu" class="grid-full">
-			<div class="row">
-				<div class="column6 end">
-					<ul>
-						<li>
-							<a href="#services">Services</a>
-							<a href="#contact">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<div class="container">
 
-		<div id="header" class="grid-full">
-			<div class="row">
-				<div class="column6 end">
-					<span>
-						<h1 class="fade-in"><?php bloginfo('name'); ?></h1>
-						<a href="#services" class="splash-arrow fade-in">&nbsp;</a>
-					</span>
-				</div>
+			<div class="menu-wrap">
+				<nav class="menu">
+					<div class="menu-list">
+						<a href="#services">Services</a>
+						<a href="#contact">Contact Us</a>
+						<a href="#services">Testimonials</a>
+					</div>
+				</nav>
 			</div>
-		</div>
+			<button class="menu-button" id="open-button"></button>
+			
+			<div class="content-wrap">
+				
+				<div id="header" class="grid-full">
+					<div class="row">
+						<div class="column6 end">
+							<span>
+								<h1 class="fade-in"><?php bloginfo('name'); ?></h1>
+								<a href="#services" class="splash-arrow fade-in">&nbsp;</a>
+							</span>
+						</div>
+					</div>
+				</div>
